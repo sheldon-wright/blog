@@ -1,0 +1,15 @@
+# Hugo 
+/public/
+/resources/_gen/
+/hugo_stats.json
+themes/* !themes/blowfish
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+
+# Node modules 
+node_modules/
+
+# Env files
+.env
