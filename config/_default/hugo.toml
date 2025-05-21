@@ -8,8 +8,7 @@ defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
-enableRobotsTXT = tru
-e
+enableRobotsTXT = true
 summaryLength = 0
 
 buildDrafts = false

@@ -10,15 +10,16 @@ isoCode = "en"
 rtl = false
 dateFormat = "January 2, 2006"
 description = "Linux, Cloud, Code, and Automation"
+logo = "logo-32x32.png"
 
-[[params.author.links]]
-github = "https://github.com/sheldon-wright"
+  [params.author]
+  image = "sheldonwright.jpg"
+  name = "Sheldon Wright"
+  bio = "Developer"
+  headline = "For me, the action is the juice."
 
-[[params.author.links]]
-x-twitter = "https://x.com/sheldonxwright"
+    [[params.author.links]]
+    github = "https://github.com/sheldon-wright"
 
-[params.author]
-image = "sheldonwright.jpg"
-name = "Sheldon Wright"
-bio = "Developer"
-headline = "For me, the action is the juice."
+    [[params.author.links]]
+    x-twitter = "https://x.com/sheldonxwright"

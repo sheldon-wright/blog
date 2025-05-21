@@ -1,5 +1,5 @@
 colorScheme = "blowfish"
-customCSS = ["css/custom.css"]
+customCSS = [ "css/custom.css" ]
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
@@ -20,6 +20,7 @@ smartTOC = true
 
 [header]
 layout = "basic"
+logo = "logo-32x32.png"
 
 [footer]
 showMenu = true
@@ -101,5 +102,3 @@ showTableOfContents = true
 groupByYear = false
 cardView = false
 cardViewScreenWidth = false
-
-
