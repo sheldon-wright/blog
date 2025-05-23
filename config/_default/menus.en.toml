@@ -20,7 +20,7 @@ weight = 9_999
 #weight = 2
 
 [[main]]
-name = "topics"
+name = "Topics"
 pageRef = "/topics"
 identifier = "WgpbY580B4"
 weight = 1
