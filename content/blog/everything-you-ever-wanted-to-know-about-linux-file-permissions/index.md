@@ -1,10 +1,10 @@
 ---
 title: "Everything You Ever Wanted to Know About Linux File Permissions"
 slug: "everything-you-ever-wanted-to-know-about-linux-file-permissions"
-date: 2025-05-26
+date: 2025-05-27
 draft: false
 description: "Everything you need to know about Linux file permissions and then some."
-topics: ["files", "Linux", "tutorials"]
+topics: ["Files", "Linux", "Tutorials"]
 ---
 
 # Everything You Ever Wanted to Know About Linux File Permissions
@@ -92,6 +92,7 @@ r | |   read    = 2^2 (4)
 **others** have `(0) none` because `0 + 0 + 0 = 0`
 
 
+
 For good measure, how about some more examples!?
 
 `644` means
@@ -101,6 +102,8 @@ For good measure, how about some more examples!?
 **group** has `(4) read` because `4 + 0 + 0 = 0`
 
 **others** have `(4) read` because `4 + 0 + 0 = 0`
+
+
 
 The default permission for files is `666` and when a `umask` is applied it becomes `644`
 
@@ -112,6 +115,8 @@ As mentioned previously, a `umask` of `022` would be subtracted from the default
 `666 - 022 = 644`
 
 You wouldn't give everyone on the planet your house keys or the pin to unlock your phone would you? File permissions are no different.  
+
+
 
 `755` means
 
