@@ -2,7 +2,7 @@
 title: "Everything You Ever Wanted to Know About Linux File Permissions"
 slug: "everything-you-ever-wanted-to-know-about-linux-file-permissions"
 date: 2025-05-27
-draft: false
+draft: true
 description: "Everything you need to know about Linux file permissions and then some."
 topics: ["Files", "Linux", "Tutorials"]
 ---
