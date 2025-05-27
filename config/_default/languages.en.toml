@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Sheldon Wright"
+title = "Sheldon Wright | Linux, Cloud, Code, and Automation"
 
 [params]
 displayName = "EN"
@@ -16,7 +16,7 @@ logo = "logo-32x32.png"
   image = "sheldonwright.jpg"
   name = "Sheldon Wright"
   bio = "Developer"
-  headline = "For me, the action is the juice."
+  headline = "Linux, Cloud, Code, and Automation"
 
     [[params.author.links]]
     github = "https://github.com/sheldon-wright"
