@@ -7,8 +7,6 @@ description: "Everything you need to know about Linux file permissions and then 
 topics: ["Files", "Linux", "Tutorials"]
 ---
 
-# Everything You Ever Wanted to Know About Linux File Permissions
-
 ### What is a bit? 🔢
 
 Let's start off simple. What is a bit?  A bit is a single unit of information. In binary, a bit can take the forms 1 or 0. 
