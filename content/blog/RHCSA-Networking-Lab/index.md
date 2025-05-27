@@ -9,7 +9,7 @@ topics: ["Linux", "nmtui", "Networking", "RHCSA"]
 
 
 ---
-## 🟥 RHCSA Networking Lab Objectives
+## RHCSA Networking Lab Objectives
 1) Set hostname for your server to `rhscsa.example.com`
 2) Set your server to a fixed IP address that matches your current network configuration
 3) Set a second IP address `10.0.0.10/24`
@@ -81,7 +81,7 @@ Arrow down to where it says `IPv4 CONFIGURATION <Automatic>` and hit enter to sw
 
 ![nmtui edit connection](netlab-nmtui-edit-connection-config.png)
 
-Go down to address line 1 and hit enter the address we grabbed from the `ip address` command earlier `10.0.2.15/24`
+Go down to address line 1 and hit enter to edit and input the address we grabbed from the `ip address` command earlier `10.0.2.15/24`
 
 ## 3. Set a second IP address `10.0.0.10/24`
 
@@ -95,7 +95,7 @@ On the DNS servers line add the address we grabbed from `/etc/resolv.conf`
 
 `10.0.2.3`
 
-**Finally**, go down to OK and go back to the main menu
+**Finally**, select OK to return to the main menu
 
 
 Select 'Activate a connection' 
@@ -122,7 +122,7 @@ or if you prefer
 
 add a line containing the following  
 
-`10.0.2.15 rhscsa.example.com` to the end of your `/etc/hosts` file 
+`10.0.2.15 rhscsa.example.com` to the end of the file 
 
 **Save and quit**
 
@@ -136,9 +136,9 @@ After the system reboots and we run `ping -c 4 google.com` and `ip address` we s
 ![post lab verification](netlab-post-lab-verification.png)
 
 
-You'll probably want to return your setting to where they were originally. 
+Once you have completed all of the objectives, you'll probably want to return your settings to their original configuration. 
 
-To do that just go back into `nmtui` and remove the manual entries we added previously. Then you'll also want to switch back to automatic ipv4 configuration, toggle the connection again and then `reboot` 
+To do that, just go back into `nmtui` and remove the manual entries we added previously. Then you'll also want to switch back to automatic ipv4 configuration, toggle the connection again and then `reboot` 
 
 **Lastly**, run `ping` and `ip address` to verify your settings are back to normal. 
 
