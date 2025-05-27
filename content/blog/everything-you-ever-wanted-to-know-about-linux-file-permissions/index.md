@@ -83,18 +83,23 @@ r | |   read    = 2^2 (4)
 ===================================
 ```
 
-So, 600 means:
+So, `600` means:
 
 owner : has `(6) read and write` because `4 + 2 + 0 = 6`
+
 group : has `(0) none` because `0 + 0 + 0 = 0`
+
 others : have `(0) none` because `0 + 0 + 0 = 0`
+
 
 For good measure, how about some more examples!?
 
-644 means: 
+`644` means: 
 
 owner : has `(6) read and write` because `4 + 2 + 0 = 6`
+
 group : has `(4) read` because `4 + 0 + 0 = 0`
+
 others : have `(4) read because `4 + 0 + 0 = 0`
 
 The default permission for files is `666` and when a `umask` is applied it becomes `644`
@@ -108,10 +113,12 @@ As mentioned previously, a `umask` of `022` would be subtracted from the default
 
 You wouldn't give everyone on the planet your house keys or the pin to unlock your phone would you? File permissions are no different.  
 
-755 means: 
+`755` means: 
 
 owner : has `(7) read, write, and execute` because `4 + 2 + 1 = 7`
+
 group : has `(5) read and execute` because `4 + 0 + 1 = 5`
+
 others : have `(5) read and execute` because `4 + 0 + 1 = 5`
 
 Similarly, the default permissions for directories or folders is `777`. Applying our umask we get `755`
