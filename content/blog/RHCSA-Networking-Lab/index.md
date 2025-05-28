@@ -126,7 +126,7 @@ Go down to the first address and hit `enter` to edit. Input the address that we 
 
 ## 3. Set a second IP address `10.0.0.10/24`
 
-Per the instructions add a second for `10.0.0.10/24` just below the first one.
+Per the objectives, add a second for `10.0.0.10/24` just below the first one.
 
 **Next**, go down to the gateway line and add the default gateway address we grabbed earlier from the `ip route` command. 
 
