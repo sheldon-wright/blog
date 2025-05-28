@@ -19,7 +19,7 @@ rssnext = { }
 smartTOC = true
 
 [header]
-layout = "basic"
+layout = "fixed"
 logo = "logo-32x32.png"
 
 [footer]
