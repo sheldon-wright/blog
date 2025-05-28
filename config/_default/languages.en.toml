@@ -9,14 +9,14 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "January 2, 2006"
-description = "Exploring Automation, Cloud, and Linux"
+description = "Pursuing Skill Through Practice and Curiosity"
 logo = "logo-32x32.png"
 
   [params.author]
   image = "sheldonwright.jpg"
   name = "Sheldon Wright"
   bio = "Developer"
-  headline = "Exploring Automation, Cloud, and Linux"
+  headline = "Pursuing Skill Through Practice and Curiosity"
 
     [[params.author.links]]
     github = "https://github.com/sheldon-wright"
