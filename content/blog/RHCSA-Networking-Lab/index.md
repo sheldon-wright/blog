@@ -69,8 +69,9 @@ However, you can <u>**and probably should**</u> perform this task via `nmtui`
 ip address
 ``` 
 
-📝 Note the first address and subnet mask on the line beginning with 'inet'
-In my case it is `inet 10.0.2.15/24` 
+📝 Note the first address and subnet mask on the line beginning with **inet**
+
+`inet 10.0.2.15/24` 
 
 <br/>
 
