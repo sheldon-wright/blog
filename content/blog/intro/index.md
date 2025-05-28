@@ -3,7 +3,8 @@ title: "👋🏻 Introduction"
 slug: "intro"
 date: 2025-05-21
 draft: false
-description: "Introduction"
+description: "Brief description of who I am and what this blog is all about."
+summary: "Brief description of who I am and what this blog is all about."
 topics: ["Introduction"]
 
 ---

@@ -2,8 +2,9 @@
 title: "RHCSA Networking Lab"
 date: 2025-05-27
 draft: false
-description: "A networking lab walkthrough for the RHCSA"
-topics: ["Linux", "nmtui", "Networking", "RHCSA"]
+description: "A friendly introduction to managing network settings using nmtui on RHEL systems."
+summary: "A friendly introduction to managing network settings using nmtui on RHEL systems."
+topics: ["Linux", "nmtui", "Networking", "RHCSA", "RHEL"]
 ---
  This was a fun one! Let's do it together.
 
@@ -189,7 +190,7 @@ If we were successful, we should see something like this.
 ![post lab verification](netlab-post-lab-verification.png)
 
 
-Once you have completed all of the objectives, you'll probably want to return your settings to their original configuration. 
+Once you have completed all of the objectives, you'll want to return your settings to their original configuration. 
 
 To do that, just go back into `nmtui` and remove the manual entries we added previously. Then switch back to automatic ipv4 configuration, toggle the connection, and `reboot` one last time.
 
