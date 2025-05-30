@@ -6,8 +6,6 @@ description: "A friendly introduction to managing network settings using nmtui o
 summary: "A friendly introduction to managing network settings using nmtui on RHEL systems."
 topics: ["Linux", "nmtui", "Networking", "RHCSA", "RHEL"]
 ---
- This was a fun one! Let's do it together.
-
 
 ---
 ## RHCSA Networking Lab Objectives

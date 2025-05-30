@@ -9,14 +9,14 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "January 2, 2006"
-description = "Pursuing Skill Through Practice and Curiosity"
+description = "pursuing skill through practice and curiosity"
 logo = "logo-32x32.png"
 
   [params.author]
   image = "sheldonwright.jpg"
   name = "Sheldon Wright"
   bio = "Developer"
-  headline = "Pursuing Skill Through Practice and Curiosity"
+  headline = "pursuing skill through practice and curiosity"
 
     [[params.author.links]]
     github = "https://github.com/sheldon-wright"
