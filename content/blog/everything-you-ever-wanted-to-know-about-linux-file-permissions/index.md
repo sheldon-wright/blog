@@ -1,5 +1,5 @@
 ---
-title: "Everything You Have Ever Wanted to Know About Linux File Permissions"
+title: "Everything You've Ever Wanted to Know About Linux File Permissions"
 slug: "what-to-know-about-linux-file-permissions"
 date: 2025-06-02
 draft: false
@@ -9,9 +9,7 @@ topics: ["Files", "Linux", "Tutorials"]
 
 ---
 
-Let's start off simple...
-
-## Bits
+Let's start off simple
 
 **What is a bit?** 
 
@@ -27,9 +25,7 @@ or if you prefer
 `0: False` <br/>
 `1: True`
 
-We can even represent larger numbers with them. For instance, with 3 bits we can represent 8 numbers. 
-
-This is known as an **octal**.
+We can even represent larger numbers with them. For instance, with 3 bits we can represent eight distinct values which correspond to the eight octal digits
 
 `0 1 2 3 4 5 6 7`
 
@@ -43,7 +39,7 @@ It occurs when all 3 bits are true `1`
 
 ```
 2^2     2^1     2^0
-bit3    bit2    bit1 
+bit2    bit1    bit0 
 1 - -   - 1 -   - - 1
 
 (4) + (2) + (1) = 7
@@ -54,7 +50,7 @@ Let's try it again, and let's represent `4` this time.
 
 ```
 2^2     2^1     2^0
-bit3    bit2    bit1 
+bit2    bit1    bit0 
 1 - -   - 0 -   - - 0
 
 (4) + (0) + (0) = 4
@@ -125,17 +121,17 @@ owner value is (6) read and write
 because 4 + 2 + 0 = 6
 
 group value is (4) read
-because 4 + 0 + 0 = 0
+because 4 + 0 + 0 = 4
 
 others value is (4) read
-because 4 + 0 + 0 = 0
+because 4 + 0 + 0 = 4
 ```
 
 **So, why 644?**
 
-The default permission for files is `666` and when a `umask` is applied it becomes `644`
+The default permission for files is `666` and when a `umask` or creation mask is applied it becomes `644`
 
-What is a `umask` you might ask? A `umask` is a kind of policy that protects your system from 
+What is a umask you might ask? A `umask` is a kind of policy that protects your system from 
 assigning unsafe permissions by subtracting some permissions.
 
 For instance, a `umask` of `022` would be subtracted from the default `666`
@@ -214,10 +210,99 @@ And **entities** are represented symbolically also
 
 `o` **others** are represented by the letter o
 
+`a` **all** is represented by the letter a
+
 ## `chmod` Command
+
+Before we change the permissions, let's quickly go over how to view the current permissions by running the command `ls -l` to get a long listing of the current working directory. 
+
+This command should output something like
+
+```
+drwxr-xr-x  8 user group 4096 Jan 12 09:00 Desktop
+drwxr-xr-x 10 user group 4096 Jan 12 09:00 Documents
+drwxr-xr-x  6 user group 4096 Jan 12 09:00 Downloads
+drwxr-xr-x 12 user group 4096 Jan 12 09:00 Music
+drwxr-xr-x  9 user group 4096 Jan 12 09:00 Pictures
+drwxr-xr-x  5 user group 4096 Jan 12 09:00 Videos
+-rw-r--r--  1 user group  220 Jan 12 09:00 somefile
+```
 
 The `chmod` command is how we actually use these notations in Linux to modify file permissions. 
 
 `chmod` stands for **change-mode**.
 
+The general format for the command using **octal notation** is 
+
+`chmod [octal value] [filename] `
+
+e.g. 
+
+`chmod 644 filename`
+
+This version explicitly sets permissions for all three entities at once. 
+
+The general format for the command using **symbolic notation** is 
+
+`chmod [entity][operator][permission] [filename] `
+
+Suppose you wanted to add read permissions to the group, you would run the command
+
+`chmod g+r filename`
+
+If you wanted to remove it you would run the command 
+
+`chmod g-r filename`
+
+If you wanted to add read permission to all of the entities you could run
+
+`chmod a+r filename`
+
+To make a file executable you can omit the entity entirely using the command 
+
+`chmod +x filename`
+
 ## Special Permissions
+
+Thus far I've only mentioned 3 pieces of information related to permissions, but there's actually 4. 
+
+The `umask` we spoke about earlier assumes a special permission of 0 or no special permissions. 
+
+`022` is equivalent to `0022` where the left most digit represents the special permissions 
+
+This table displays the possible values for special permissions
+
+| Permission      | Binary | Octal |
+| --------------- | ------ | ----- |
+| None            | 000    | 0     |
+| Sticky          | 001    | 1     |
+| SGID            | 010    | 2     |
+| SGID + Sticky   | 011    | 3     |
+| SUID            | 100    | 4     |
+| SUID + Sticky   | 101    | 5     |
+| SUID + SGID     | 110    | 6     |
+| All             | 111    | 7     |
+
+
+
+**SUID** stands for Set User ID. You set SUID on the owner level. It runs an executable file with file owner’s permissions 
+
+**Symbolic**: `chmod u+s filename`
+
+**Octal**: `chmod 4XXX filename`
+
+<br/>
+
+**SGID** stands for Set Group ID. You set SGID on the group level. It makes any new file in that directory inherit the directory’s group, and (when set on an executable) it runs with the file’s group permissions.
+
+**Symbolic**: `chmod g+s filename`
+
+**Octal**: `chmod 2XXX filename`
+
+<br/>
+
+**Sticky Bit** is set on the world or others level on a directory. It allows sharing of files in the directory, but only a file’s owner may delete a file.
+
+**Symbolic**: `chmod o+t directoryname`
+
+**Octal**: `chmod 1XXX directoryname`
