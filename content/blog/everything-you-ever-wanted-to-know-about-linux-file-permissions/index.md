@@ -9,7 +9,7 @@ topics: ["Files", "Linux", "Tutorials"]
 
 ---
 
-Let's start off simple. 
+Let's start off simple...
 
 ## Bits
 
@@ -27,7 +27,9 @@ or if you prefer
 `0: False` <br/>
 `1: True`
 
-We can even represent larger numbers with them. For instance, with 3 bits we can represent 8 numbers. This is known as an **octal**.
+We can even represent larger numbers with them. For instance, with 3 bits we can represent 8 numbers. 
+
+This is known as an **octal**.
 
 `0 1 2 3 4 5 6 7`
 
@@ -37,7 +39,7 @@ Let's look at the largest number in the octal `7`.
 
 It occurs when all 3 bits are true `1`
 
-`111` in its expanded form it looks like this:
+`111` in expanded form looks like this
 
 ```
 2^2     2^1     2^0
@@ -65,21 +67,23 @@ Now that we've learned how binary and octal values fit together we will next lea
 
 ## Permissions
 
-When it comes to permissions there are: 
+When it comes to permissions there are
 
 **3 types of entities**  `users, groups, others`
 
-and **3 types of permissions**  `read, write, execute`
+and 
 
-### Notation
+**3 types of permissions**  `read, write, execute`
 
-There's actually two ways to represent permissions. But for now we will focus on the **Octal** form.
+### Octal Notation
+
+You can actually represent permissions in different ways, but for now we will focus on the octal form.
 
 **Octal notation** is a numeric representation of permissions.
 
 Octal permissions are 3 digit numbers like `600`. 
 
-⚠ However, it's very important to recognize that `600` is **NOT** the number six-hundred. 
+⚠ It's very important to recognize that `600` is **NOT** the number six-hundred. 
 
 `6-0-0` is actually 3 separate and distinct numbers. Specifically, each number represents the permissions that each entity has.
 
@@ -134,7 +138,7 @@ The default permission for files is `666` and when a `umask` is applied it becom
 What is a `umask` you might ask? A `umask` is a kind of policy that protects your system from 
 assigning unsafe permissions by subtracting some permissions.
 
-For instance, `umask` of `022` would be subtracted from the default `666`
+For instance, a `umask` of `022` would be subtracted from the default `666`
 
 `666 - 022 = 644`
 
@@ -164,7 +168,9 @@ The default permissions for directories or folders is `777`. Applying our umask 
 `777 - 022 = 755`
 
 
-Now that we've covered Octal notation let's discuss **symbolic notation** the letter or symbol form of representing file permissions.
+### Symbolic Notation
+
+Now that we've covered octal notation let's discuss **symbolic notation**, the letter or symbol form of representing file permissions.
 
 You might recall this from earlier 
 
@@ -198,10 +204,20 @@ Instead of numbers to represent permissions, we use letters (symbols)
 
 `x` **execute** is represented by the letter x
 
+<br/>
+
+And **entities** are represented symbolically also
+
+`u` **user** or the file owner is represented by the letter u
+
+`g` **group** is represented by the letter g 
+
+`o` **others** are represented by the letter o
+
 ## `chmod` Command
 
-The `chmod` command is how we actually use these notations in Linux to modify permissions. 
+The `chmod` command is how we actually use these notations in Linux to modify file permissions. 
 
-`chmod` actually stands for **change-modify** permissions.
+`chmod` stands for **change-mode**.
 
 ## Special Permissions
