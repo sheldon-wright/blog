@@ -2,28 +2,23 @@
 none = "none"
 
 [[main]]
-pre = "github"
+name = "GitHub"
+# pre = "github"
 url = "https://github.com/sheldon-wright"
 identifier = "I1t1TT83sJ"
-weight = 9_999
-
-[[main]]
-pre = "x-twitter"
-url = "https://x.com/sheldonxwright"
-identifier = "pvQj79HO4y"
-weight = 9_999
-
-#[[main]]
-#name = "resume"
-#url = "/resume.pdf"
-#identifier = "s85TNG5oV8"
-#weight = 2
+weight = 2
 
 [[main]]
 name = "Topics"
 pageRef = "/topics"
 identifier = "WgpbY580B4"
 weight = 1
+
+[[main]]
+name = "Contact"
+url = "mailto:sheldonwright@proton.me"
+identifier = "nowqWOQc9Z"
+weight = 3
 
 [[footer]]
 none = "none"
