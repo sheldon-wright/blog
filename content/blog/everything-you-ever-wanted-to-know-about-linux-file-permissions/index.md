@@ -1,67 +1,94 @@
 ---
-title: "Everything You Ever Wanted to Know About Linux File Permissions"
-slug: "everything-you-ever-wanted-to-know-about-linux-file-permissions"
-date: 2025-05-27
-draft: true
-description: "Everything you need to know about Linux file permissions and then some."
-summary: "Everything you need to know about Linux file permissions and then some."
+title: "Everything You Have Ever Wanted to Know About Linux File Permissions"
+slug: "what-to-know-about-linux-file-permissions"
+date: 2025-06-02
+draft: false
+description: "Everything you need to know about Linux file permissions."
+summary: "Everything you need to know about Linux file permissions."
 topics: ["Files", "Linux", "Tutorials"]
 
 ---
 
-### What is a bit? 🔢
+Let's start off simple. 
 
-Let's start off simple. What is a bit?  A bit is a single unit of information. In binary, a bit can take the forms 1 or 0. 
+## Bits
 
-A bit can represent a great many things, but typically `ON` or `OFF`. 
+**What is a bit?** 
 
-`0: OFF, 1: ON`
+A bit is a single unit of information. 
 
-It can also represent larger numbers. For instance, with 3 bits we can represent 8 numbers.
+In binary, a bit can take the form 1 or 0. 
+
+`0: OFF` <br/>
+`1: ON`
+
+or if you prefer
+
+`0: False` <br/>
+`1: True`
+
+We can even represent larger numbers with them. For instance, with 3 bits we can represent 8 numbers. This is known as an **octal**.
 
 `0 1 2 3 4 5 6 7`
 
-The highest number is 7 and it occurs when all 3 bits are true (1)
+**So, how do we represent 8 numbers with only 3 bits?** 
+
+Let's look at the largest number in the octal `7`. 
+
+It occurs when all 3 bits are true `1`
+
+`111` in its expanded form it looks like this:
 
 ```
-111 from right to left
-
 2^2     2^1     2^0
 bit3    bit2    bit1 
 1 - -   - 1 -   - - 1
 
-2^2 (4) + 2^1 (2) + 2^0 (1) = 7
+(4) + (2) + (1) = 7
 ```
 
-### Permissions 🔒
-
-When it comes to permissions, there are 3 types of entities
-
-`users, groups, others `
-
-And 3 types of permissions
-
-`read, write, execute`
-
-Permissions can be represented in two different, but equivalent forms
-
-1) Octal : number form 
-2) Symbolic : letter form
+Let's try it again, and let's represent `4` this time.
 
 
-#### Octal
+```
+2^2     2^1     2^0
+bit3    bit2    bit1 
+1 - -   - 0 -   - - 0
 
-Octal permissions are 3 digit numbers like 600. 
+(4) + (0) + (0) = 4
+```
 
-⚠ NOTE: Its very important to recognize that 600 is not 600 but actually 3 separate numbers.
+See how it works?
+
+Now that we've learned how binary and octal values fit together we will next learn how they relate to file permissions. 
+
+
+## Permissions
+
+When it comes to permissions there are: 
+
+**3 types of entities**  `users, groups, others`
+
+and **3 types of permissions**  `read, write, execute`
+
+### Notation
+
+There's actually two ways to represent permissions. But for now we will focus on the **Octal** form.
+
+**Octal notation** is a numeric representation of permissions.
+
+Octal permissions are 3 digit numbers like `600`. 
+
+⚠ However, it's very important to recognize that `600` is **NOT** the number six-hundred. 
+
+`6-0-0` is actually 3 separate and distinct numbers. Specifically, each number represents the permissions that each entity has.
 
 ```
 user   group  others
 - - -  - - -  - - -
   6      0      0
 ```
-
-And each number represents the permissions that each entity has. 
+ 
 
 ```
 r w x             base 2
@@ -83,49 +110,98 @@ r | |   read    = 2^2 (4)
 ===================================
 ```
 
-`600` means
+---
 
-**owner** has `(6) read and write` because `4 + 2 + 0 = 6`
+### Files
 
-**group** has `(0) none` because `0 + 0 + 0 = 0`
+`644` is a common permission for files and it means
 
-**others** have `(0) none` because `0 + 0 + 0 = 0`
+```
+owner value is (6) read and write
+because 4 + 2 + 0 = 6
 
+group value is (4) read
+because 4 + 0 + 0 = 0
 
+others value is (4) read
+because 4 + 0 + 0 = 0
+```
 
-For good measure, how about some more examples!?
-
-`644` means
-
-**owner** has `(6) read and write` because `4 + 2 + 0 = 6`
-
-**group** has `(4) read` because `4 + 0 + 0 = 0`
-
-**others** have `(4) read` because `4 + 0 + 0 = 0`
-
-
+**So, why 644?**
 
 The default permission for files is `666` and when a `umask` is applied it becomes `644`
 
 What is a `umask` you might ask? A `umask` is a kind of policy that protects your system from 
 assigning unsafe permissions by subtracting some permissions.
 
-As mentioned previously, a `umask` of `022` would be subtracted from the default `666`
+For instance, `umask` of `022` would be subtracted from the default `666`
 
 `666 - 022 = 644`
 
-You wouldn't give everyone on the planet your house keys or the pin to unlock your phone would you? File permissions are no different.  
 
 
+### Directories
 
-`755` means
 
-**owner** has `(7) read, write, and execute` because `4 + 2 + 1 = 7`
+`755` is a common permission for directories and it means
 
-**group** has `(5) read and execute` because `4 + 0 + 1 = 5`
+```
+owner value is (7) read, write, and execute 
+because 4 + 2 + 1 = 7
 
-**others** have `(5) read and execute` because `4 + 0 + 1 = 5`
+group value is (5) read and execute 
+because 4 + 0 + 1 = 5
 
-Similarly, the default permissions for directories or folders is `777`. Applying our umask we get `755`
+others value is (5) read and execute 
+because 4 + 0 + 1 = 5
+
+```
+
+**So, why 755?**
+
+The default permissions for directories or folders is `777`. Applying our umask of `022` we get `755`
 
 `777 - 022 = 755`
+
+
+Now that we've covered Octal notation let's discuss **symbolic notation** the letter or symbol form of representing file permissions.
+
+You might recall this from earlier 
+
+```
+r w x             base 2
+-----             -------
+r | |   read    = 2^2 (4)
+  w |   write   = 2^1 (2)
+    x   execute = 2^0 (1)
+
+                        [r + w + x]
+===================================
+0 none                  [0 + 0 + 0] ---
+1 execute only          [0 + 0 + 1] --x
+2 write only            [0 + 2 + 0] -w-
+3 write and execute     [0 + 2 + 1] -wx
+4 read only             [4 + 0 + 0] r--
+5 read and execute      [4 + 0 + 1] r-x
+6 read and write        [4 + 2 + 0] rw-
+7 read, write, and exec [4 + 2 + 1] rwx
+===================================
+```
+
+It is actually the combination of *octal notation* and *symbolic notation*. 
+
+Instead of numbers to represent permissions, we use letters (symbols)
+
+`r` **read** is represented by the letter r
+
+`w` **write** is represented by the letter w 
+
+`x` **execute** is represented by the letter x
+
+## `chmod` Command
+
+The `chmod` command is how we actually use these notations in Linux to modify permissions. 
+
+`chmod` actually stands for **change-modify** permissions.
+
+## Special Permissions

@@ -44,7 +44,7 @@ ip route > ~/netbackup/iproute.bak
 cat /etc/resolv.conf > ~/netbackup/resolv.bak
 ```
 
-Now that we've got that out of the way, let's get to work! 👷🏻‍♂️
+Now that we've got that out of the way, let's get to work.
 
 
 ## 1. Set hostname for your server to rhscsa.example.com
@@ -200,6 +200,4 @@ reboot
 
 ![post lab return to default verification](netlab-return-to-default-verification.png)
 
-**You really did it. Job well done!** 🥳
-
-I hope you had fun, I know I did! 
+**You really did it, job well done!**
