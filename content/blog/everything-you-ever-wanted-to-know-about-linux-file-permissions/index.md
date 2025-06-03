@@ -57,7 +57,7 @@ bit2    bit1    bit0
 (4) + (2) + (1) = 7
 ```
 
-Let's try it again, and let's represent `4` this time.
+Let's try it again representing `4` this time.
 
 
 ```
