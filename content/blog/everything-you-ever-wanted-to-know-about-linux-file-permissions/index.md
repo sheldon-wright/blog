@@ -31,6 +31,18 @@ We can even represent larger numbers with them. For instance, with 3 bits we can
 
 **So, how do we represent 8 numbers with only 3 bits?** 
 
+| Binary | Octal |
+| ------ | ----- |
+| 000    | 0     |
+| 001    | 1     |
+| 010    | 2     |
+| 011    | 3     |
+| 100    | 4     |
+| 101    | 5     |
+| 110    | 6     |
+| 111    | 7     |
+
+
 Let's look at the largest number in the octal `7`. 
 
 It occurs when all 3 bits are true `1`
