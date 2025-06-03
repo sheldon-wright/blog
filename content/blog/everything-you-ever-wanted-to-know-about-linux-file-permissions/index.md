@@ -43,7 +43,7 @@ We can even represent larger numbers with them. For instance, with 3 bits we can
 | 111    | 7     |
 
 
-Let's look at the largest number in the octal `7`. 
+Let's look at the largest octal digit `7`. 
 
 It occurs when all 3 bits are true `1`
 
