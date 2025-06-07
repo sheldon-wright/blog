@@ -4,7 +4,7 @@ slug: "how-to-deploy-a-hugo-blog-to-cloudflare-pages"
 date: 2025-05-22
 draft: true
 description: "a description"
-tags: ["example", "tag"]
+tags: ["cloudflare", "hugo", "cms", "blog"]
 ---
  an example to get you started
 # This is a heading
