@@ -44,6 +44,8 @@ ip route > ~/netbackup/iproute.bak
 cat /etc/resolv.conf > ~/netbackup/resolv.bak
 ```
 
+You can also use `nmcli device show` to get ip and gateway in one shot.
+
 Now that we've got that out of the way, let's get to work.
 
 
