@@ -23,3 +23,6 @@ logo = "logo-32x32.png"
 
     [[params.author.links]]
     x-twitter = "https://x.com/sheldonxwright"
+
+    [[params.author.links]]
+    email = "mailto:sheldonwright@proton.me"
