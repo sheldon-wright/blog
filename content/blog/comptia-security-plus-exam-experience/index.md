@@ -6,7 +6,7 @@ description: "I recently passed the CompTIA Security+ (SY0-701) certification ex
 summary: "A detailed breakdown of my CompTIA Security+ (SY0-701) exam prep, strategy, and lessons learned."
 tags: ["CompTIA", "cyber Security", "certification prep", "Study Tips"]
 ---
-I recently passed the [CompTIA Security+](https://www.comptia.org/en-us/certifications/security/) exam and want to share my experience with you in the hopes that it will better prepare you for the exam.
+I recently passed the [CompTIA Security+](https://www.comptia.org/en-us/certifications/security/) (SY0-701) exam and want to share my experience with you in the hopes that it will better prepare you for the exam.
 
 I had quite a bit of relevant knowledge going in and scored 79% on a practice exam prior to studying anything. I'm still genuinely surprised by how much I did learn given my starting point. 
 
@@ -16,20 +16,18 @@ It shouldn't be discounted that exam objectives, whether you plan to obtain a pa
 
 >The exam was definitely more challenging than I anticipated.  
 
-While taking the exam I felt like I was doing pretty poorly. My final score didn't reflect how poorly I thought I was doing while taking the exam. I generally selected the best option given the available choices, but I was rarely totally confident in my answers. 
+I would say that only 20% of the questions that I was presented with were direct and unambiguous. The other 80% of questions were ambiguous and required critical thinking. A lot of questions used adjectives like `best, safest, most effective, or most secure` which forced me to consider context and know enough about the subject matter to eliminate and rank order potential answers.
 
 Think carefully about each question, and don't be discouraged by the fact that the questions aren't as straightforward as the questions you might have anticipated going in. It's just the nature of this exam.
-
-I would say that only 20% of the questions that I was presented with were direct and unambiguous. The other 80% of questions were various degrees of ambiguous and required critical thinking. A lot of questions used adjectives like `best, safest, most effective, or most secure` which forced me to consider context and know enough about the subject matter to eliminate and rank order potential answers.
 
 ### Study Materials
 
 I used a few resources to study for the exam.
 
 - [CompTIA Exam Objectives PDF](https://www.comptia.org/en-us/certifications/security/)
-- [Jason Dion's CompTIA Security+ Course & Practice Exam](https://www.udemy.com/course/securityplus/?couponCode=KEEPLEARNING) (price varies)
-- [Professor Messer's CompTIA SY0-701 Security+ Course](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv) on YouTube
-- [Professor Messer's CompTIA SY0-701 Security+ Practice Exams PDF](https://www.professormesser.com/amember/signup/sy0701pe) <br/>(3 for $30)
+- [Jason Dion's CompTIA Security+ Udemy Course & Practice Exam](https://www.udemy.com/course/securityplus/?couponCode=KEEPLEARNING) (price varies)
+- [Professor Messer's CompTIA Security+ Course](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv) on YouTube
+- [Professor Messer's CompTIA Security+ Practice Exams PDF](https://www.professormesser.com/amember/signup/sy0701pe) <br/>(3 for $30)
 
 ---
 
@@ -41,7 +39,7 @@ I took a total of 4 practice exams. Almost none of the questions from those exam
 
 >You are not prepared for the Performance Based Questions (PBQs)
 
-I do not care if you've prepared for the PBQs, prepare some more. Memorization alone is not going to get you through this part of the exam. Understand how you might configure setups contained within the objectives, interpret logs, and where you might place devices in a diagram. None of the study materials I used did a particularly good job preparing me for these questions. If I could go back and change one thing about my studies I would have spent more time really drilling these questions.
+ Memorization alone is not going to get you through this part of the exam. Understand how you might configure setups contained within the objectives, interpret logs, and where you might place devices in a diagram. None of the study materials that I used did a particularly good job preparing me for these questions. If I could go back and change one thing about my studies I would have spent more time really drilling these questions.
 
 Not necessarily in terms of content, but in terms of difficulty, the PBQs that most closely aligned with the exam were [Cyberkraft](https://www.youtube.com/@cyberkraft1) on YouTube. 
 
@@ -49,7 +47,7 @@ On the exam, take the PBQs last. Flag them and come back after you've answered a
 
 Jason Dion's course is very informative, but it's also 31 hours of material. If you only have a small amount of time every day to study, it will provide you with a structured approach to covering the material. It does not follow the same order as the exam objectives, if that is important to you. The practice questions and practice exam were too easy and not demonstrative of real exam readiness, in my opinion. 
 
-Professor Messer's Security+ playlist is probably the most efficient study material you're going to find. If you're going to disregard the advice here and are just looking for just enough information to pass, this is probably the resource to go with. I did benefit from his practice exams and would recommend them to everyone. They definitely made me more confident going into the exam. 
+Professor Messer's Security+ playlist is probably the most efficient study material I found. If you're looking for just enough information to pass, this is probably the resource to go with. I did benefit from his practice exams and would recommend them to anyone. They definitely made me more confident going into the exam. 
 
 **Bonus:** [Cyber James](https://www.youtube.com/watch?v=BrvCG1P8AMw&list=PLIsEyzUoUVmBJk0ZqxExnII_3Ac38Coet) on YouTube also has many good practice questions to help you understand the concepts, but like all of the other resources mentioned here the difficulty is lower than what I saw on the exam. 
 
