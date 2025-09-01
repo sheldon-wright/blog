@@ -15,8 +15,8 @@ logo = "logo-32x32.png"
   [params.author]
   image = "sheldonwright.jpg"
   name = "Sheldon Wright"
-  bio = "Developer"
-  headline = "pursuing skill through practice and curiosity"
+  bio = "Linux System Administrator"
+  headline = "Pursuing skill through practice and curiosity."
 
     [[params.author.links]]
     github = "https://github.com/sheldon-wright"
