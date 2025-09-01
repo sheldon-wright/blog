@@ -2,9 +2,9 @@
 title: "My CompTIA Security+ Exam Experience"
 date: 2025-08-28
 draft: false
-description: "I recently passed the CompTIA Security+ (SY0-701) certification exam and wrote this guide to share my experience. Learn what study materials I used, how I handled performance-based questions (PBQs), and what I wish I had done differently to better prepare. This honest, practical guide is for anyone serious about passing Security+ the right way."
+description: "I recently passed the CompTIA Security+ (SY0-701) certification exam and wrote an article to share my experience. Learn what to expect, what study materials I found helpful, and what I wish I had done differently to prepare."
 summary: "A detailed breakdown of my CompTIA Security+ (SY0-701) exam prep, strategy, and lessons learned."
-tags: ["CompTIA", "cyber Security", "certification prep", "Study Tips"]
+tags: ["CompTIA", "Cybersecurity", "Certification Prep", "Study Tips"]
 ---
 I recently passed the [CompTIA Security+](https://www.comptia.org/en-us/certifications/security/) (SY0-701) exam and want to share my experience with you in the hopes that it will better prepare you for the exam.
 
