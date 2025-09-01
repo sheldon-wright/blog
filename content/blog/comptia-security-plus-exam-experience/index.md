@@ -18,7 +18,7 @@ It shouldn't be discounted that exam objectives, whether you plan to obtain a pa
 
 I would say that only 20% of the questions that I was presented with were direct and unambiguous. The other 80% of questions were ambiguous and required critical thinking. A lot of questions used adjectives like `best, safest, most effective, or most secure` which forced me to consider context and know enough about the subject matter to eliminate and rank order potential answers.
 
-Think carefully about each question, and don't be discouraged by the fact that the questions aren't as straightforward as the questions you might have anticipated going in. It's just the nature of this exam.
+I advise you to think carefully about each question, and don't be discouraged by the fact that the questions aren't as straightforward as the questions you might have anticipated going in. It's just the nature of this exam.
 
 ### Study Materials
 
@@ -45,11 +45,11 @@ Not necessarily in terms of content, but in terms of difficulty, the PBQs that m
 
 On the exam, take the PBQs last. Flag them and come back after you've answered all of the multiple choice questions. I don't recall who gave me that advice, but I'm glad I heeded it. 
 
-Jason Dion's course is very informative, but it's also 31 hours of material. If you only have a small amount of time every day to study, it will provide you with a structured approach to covering the material. It does not follow the same order as the exam objectives, if that is important to you. The practice questions and practice exam were too easy and not demonstrative of real exam readiness, in my opinion. 
+Jason Dion's course is very informative, but it's also 31 hours of material. If you only have a small amount of time every day to study this course will provide you with a structured approach to covering the material. It does not follow the same order as the exam objectives, if that is important to you. The practice questions and practice exam were too easy and not demonstrative of real exam readiness, in my opinion. 
 
-Professor Messer's Security+ playlist is probably the most efficient study material I found. If you're looking for just enough information to pass, this is probably the resource to go with. I did benefit from his practice exams and would recommend them to anyone. They definitely made me more confident going into the exam. 
+Professor Messer's Security+ playlist is probably the most efficient study material I found. If you're looking for just enough information to pass, this is probably the resource to choose. I benefited from his practice exams and would recommend them to anyone. They definitely made me more confident going into the exam. 
 
-**Bonus:** [Cyber James](https://www.youtube.com/watch?v=BrvCG1P8AMw&list=PLIsEyzUoUVmBJk0ZqxExnII_3Ac38Coet) on YouTube also has many good practice questions to help you understand the concepts, but like all of the other resources mentioned here the difficulty is lower than what I saw on the exam. 
+**Bonus:** [Cyber James](https://www.youtube.com/watch?v=BrvCG1P8AMw&list=PLIsEyzUoUVmBJk0ZqxExnII_3Ac38Coet) on YouTube also has many good practice questions to help you understand the concepts, but like all of resources mentioned here the difficulty is lower than what I saw on the exam. 
 
 ### Conclusion
 
